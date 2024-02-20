@@ -6,6 +6,19 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      md: "768px",
+      ten: "1440px",
+      xl: "1536px",
+      mac: "1280px",
+      big: "1792px",
+    },
+    fontFamily: {
+      Syncopate: ["Syncopate"],
+      RobotoMono: ["Roboto Mono"],
+      Yeseva: ["Yeseva One"],
+    },
+
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -14,5 +27,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("flowbite/plugin")],
 };

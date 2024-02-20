@@ -1,33 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Syncopate:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+@import url("https://assets.calendly.com/assets/external/widget.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+#blog {
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+#homepage {
+  translate: all;
+  animation: wiggle 1s ease-out forwards;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@media (min-width: 1536px) {
+  @keyframes wiggle {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    50%,
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+#coursepage {
+  translate: all;
+  animation: moveRightToLeft 1s ease-in-out forwards;
+}
+@media (min-width: 1536px) {
+  @keyframes moveRightToLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    50%,
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+#top2bottom {
+  translate: all;
+  animation: moveTopToBottom 1s ease-in-out forwards;
+}
+
+@media (min-width: 1536px) {
+  @keyframes moveTopToBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    50%,
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+#bottom2top {
+  translate: all;
+  animation: moveBottomToTop 1s ease-in-out forwards;
+}
+
+@keyframes moveBottomToTop {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  50%,
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
