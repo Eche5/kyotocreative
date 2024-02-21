@@ -9,6 +9,15 @@ function ContactForm() {
     <div className=" flex justify-between ">
       <div className=" bg-gradient-to-t from-[#e2bef8]  to-transparent w-[5.5rem] ten:flex  mac:flex h-auto border-2 border-black border-b-0 hidden xl:flex justify-center items-center "></div>
       <div className=" w-full border-2 border-black flex flex-col gap-20 ten:p-20 py-10">
+        <div className=" flex justify-center">
+          <div className=" xl:w-[968px] ten:w-[968px] mac:w-[968px] w-full h-[773px] bg-[#FFE3CE] border-2 border-black   p-4 gap-8">
+            <HubspotContactForm
+              region="na1"
+              portalId="44999423"
+              formId="ce574a60-d5f7-4dcb-89a4-88912702e578"
+            />
+          </div>
+        </div>
         <div className=" xl:flex ten:flex  mac:flex justify-center grid grid-cols-1  xl:gap-20 ten:gap-20 mac:gap-20 gap-10 px-4 ">
           <div className="  relative border-2 border-l-8 border-b-8 border-black">
             <div className=" bg-white xl:p-8 p-4">
@@ -45,15 +54,6 @@ function ContactForm() {
                 business@kyotocreative.com
               </a>
             </div>
-          </div>
-        </div>
-        <div className=" flex justify-center">
-          <div className=" xl:w-[968px] ten:w-[968px] mac:w-[968px] w-full h-[773px] bg-[#FFE3CE] border-2 border-black   p-4 gap-8">
-            <HubspotContactForm
-              region="na1"
-              portalId="44999423"
-              formId="ce574a60-d5f7-4dcb-89a4-88912702e578"
-            />
           </div>
         </div>
       </div>

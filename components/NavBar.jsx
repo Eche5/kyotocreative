@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 
 import Image from "next/image";
 import Link from "next/link";
-
+import logo from "../images/rsz_kyoto_creative_1.png";
 function NavBar() {
   const pathname = usePathname();
   const toggleNavbar = () => {
@@ -16,15 +16,12 @@ function NavBar() {
 
   return (
     <>
-      <nav className="hidden xl:block ten:block mac:block h-[10vh]   ">
+      <nav className="hidden xl:block ten:block mac:block h-[10vh]   " id="top">
         <div className="flex justify-between items-center border-2 border-black bg-white">
-          <div className=" bg-[#FFE3CE] w-[5.45rem] h-[10vh] border-2 border-black flex justify-center items-center "></div>
+          <div className=" bg-[#FFE3CE] w-[5.45rem] h-[10vh] border-2 border-black flex justify-center items-center " id="homepage"></div>
           <div className=" flex justify-between w-full ">
             <div className=" border-black border-l-2 px-4 xl:w-[34rem] mac:w-full whitespace-nowrap ten:w-96 flex justify-start items-center">
-              <h1 className=" xl:text-5xl mac:text-2xl font-Yeseva font-semi-bold text-[#020917] mac:text-nowrap">
-                <span className=" text-[#FF0F0F] ">Kyoto</span> Creative
-                <span className=" text-2xl"> Co.</span>
-              </h1>
+             <Image src={logo} alt="" className=" h-[10vh] p-1"/>
             </div>
             <ul className="w-full h-[10vh] px-4 uppercase font-Syncopate bg-lime-100 border-2 border-black text-stone-400 justify-between items-center gap-8 inline-flex">
               <Link
@@ -91,7 +88,7 @@ function NavBar() {
               </Link>
             </ul>
           </div>
-          <div className=" bg-[#FFE3CE] w-[5.45rem] h-[10vh] border-2 border-black  flex justify-center items-center ">
+          <div className=" bg-[#FFE3CE] w-[5.45rem] h-[10vh] border-2 border-black  flex justify-center items-center " id="coursepage">
             <Image src={mail} alt="mail" />
           </div>
         </div>

@@ -27,7 +27,7 @@ function MainBar() {
         />
 
         <h1 className=" xl:text-[35px] font-Syncopate font-bold text-center uppercase">
-          Get a free quote now
+          CONTACT US now
         </h1>
         <Image
           src={circl}

@@ -51,8 +51,8 @@ function Barner() {
               <div className="w-[257px] h-[72px] left-0 top-[10.23px] absolute bg-white border-2 border-zinc-800" />
               <div className="w-64 h-[71px] px-[35px] py-[26px] left-[12px] top-0 hover:left-0 hover:top-3 transition-all absolute bg-zinc-800 flex-col justify-center items-center gap-2.5 inline-flex">
                 <div className="justify-center items-center gap-[9px] inline-flex">
-                  <h2 className="text-center text-white text-lg font-bold font-Syncopate uppercase leading-[19.10px] text-[14px] flex justify-between items-center gap-2">
-                    Get Started
+                  <h2 className="text-center text-white text-lg font-bold text-nowrap font-Syncopate uppercase leading-[19.10px] text-[14px] flex justify-between items-center gap-2">
+                    Get In Touch
                     <Image src={arrow} className=" w-4 h-4" alt="arrow" />
                   </h2>
                 </div>
